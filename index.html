@@ -122,48 +122,58 @@
         float: left;
       }
 
-      .blockOne .textfield span.orange {
+      .blockOne .textfield span.orange 
+      {
         color: #FF6400; 
         font-weight: bolder;
       }
 
-      .blockTwo {
+      .blockTwo 
+      {
         text-align: center;
       }
 
-      .blockTwo h1 {
+      .blockTwo h1 
+      {
         padding: 35px;
         margin: 0;
       }
 
-      .blockTwo span.orange {
+      .blockTwo span.orange 
+      {
         color: #FF6400;
       }
 
-      .blockTwo .field {
+      .blockTwo .field 
+      {
         margin: 20px 0px 20px 0px;
       }
 
-      .blockTwo .field h6 {
+      .blockTwo .field h6 
+      {
         text-align: left;
       }
 
-      .blockTwo .field .textfield {
+      .blockTwo .field .textfield 
+      {
         text-align: left;
       }
 
-      .blockTwo .field > img {
+      .blockTwo .field > img 
+      {
         margin: 15px;
         padding: 10px;
         float: left;
       }
 
-      .blockThree {
+      .blockThree 
+      {
         background: #E0E0E0;
         text-align: center;
       }
 
-      .blockThree h1 {
+      .blockThree h1 
+      {
         padding: 30px;
       }
 
@@ -231,6 +241,40 @@
       .blockFive 
       {
         text-align: center;
+        background: url('/materials/fon-forma.png');
+      }
+
+      .blockFive h1 
+      {
+        padding: 20px;
+      }
+
+      .blockFive span.orange 
+      {
+        color: #FF6400;
+      }
+
+      .blockFive .imgfield > img 
+      {
+        max-width: 100%;
+      }
+
+      .blockSix h1 
+      {
+        padding: 100px 20px 20px 0px;
+      }
+
+      .blockSix .contactsfield 
+      {
+        position: relative;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        z-index: 1;
+      }
+
+      .blockSix .mapfield
+      {
+        padding: 0;
+        margin: 0;
       }
 
       @media screen and (max-width: 768px) 
@@ -447,71 +491,73 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container blockFive">
-          <div class="row"> 
-            <div class="col-lg-12">
-                <h1>НУЖНА ПОМОЩЬ В ПОДБОРЕ?</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <img src="materials/kompressoryforma.png">
-            </div>
-            <div class="col-lg-6">
-              <h3>Получите ответ через 15 минут</h3>
-
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Ваше имя">
-                  </div>
-                  <div class="form-group">
-                    <input type="number" class="form-control" placeholder="Номер телефона">
-                  </div>
-                  <div class="form-group">
-                    <input type="number" class="form-control" placeholder="E-mail">
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" placeholder="Ваше сообщение" rows="3"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-danger default">ПОДОБРАТЬ КОМПРЕССОР</button>
-                  </div>
-                </form>
-
-            </div>
+    <div class="container-fluid blockFive">
+        <div class="row"> 
+          <div class="col-lg-12">
+              <h1>НУЖНА <span class="orange">ПОМОЩЬ</span> В ПОДБОРЕ?</h1>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-3">
-            <h1>КОНТАКТЫ</h1>
-            <div>
-              <p><img src="materials/ikonkatelefona.png">+7(495)123-45-67</p>
-              <p><img src="materials/ikonkapochty.png">zakaz@zif-msk.ru</p>
-              <p><img src="materials/ikonkapochty.png">г. Москва, м. Фрунзенская, ул. Россолимо д.17, стр. 1</p>
-            </div>
+          <div class="col-lg-6 imgfield">
+            <img src="materials/kompressoryforma.png">
           </div>
-          <div class="col-sm-9">
-              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A02f34e7ec53a76237c8b2a47a3c94c6236634c7f9926b80024a15e3c5633d599&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-3">
-            <img src="materials/logopodval.png" alt="">
-          </div>
-          <div class="col-sm-3">
-            <p>ООО "ПНЕВМОТЕХ" - официальный поставщик винтовых компрессоров ЗИФ. Доставка. Запчасти</p>
-          </div>
-          <div class="col-sm-3">
-            
-          </div>
-          <div class="col-sm-3">
-
+          <div class="col-lg-6">
+            <h3>Получите ответ <span class="orange">через 15 минут</span></h3>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control" placeholder="Номер телефона">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Ваше сообщение" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-danger default">ПОДОБРАТЬ КОМПРЕССОР</button>
+                </div>
+              </form>
           </div>
         </div>
     </div>
+
+    <div class="container-fluid blockSix">
+      <div class="row">
+        <div class="col-sm-3 contactsfield">
+          <h1>КОНТАКТЫ</h1>
+          <div>
+            <p><img src="materials/ikonkatelefona.png">+7(495)123-45-67</p>
+            <p><img src="materials/ikonkapochty.png">zakaz@zif-msk.ru</p>
+            <p><img src="materials/ikonkapochty.png">г. Москва, м. Фрунзенская, ул. Россолимо д.17, стр. 1</p>
+          </div>
+        </div>
+
+        <div class="col-sm-9 mapfield">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A02f34e7ec53a76237c8b2a47a3c94c6236634c7f9926b80024a15e3c5633d599&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="materials/logopodval.png" alt="">
+        </div>
+        <div class="col-sm-3">
+          <p>ООО "ПНЕВМОТЕХ" - официальный поставщик винтовых компрессоров ЗИФ. Доставка. Запчасти</p>
+        </div>
+        <div class="col-sm-3">
+          
+        </div>
+        <div class="col-sm-3">
+  
+        </div>
+      </div>
+   </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
