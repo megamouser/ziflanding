@@ -1,332 +1,30 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Zif Landing</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-      .header 
-      {
-        border-bottom: 3px solid #555E6D;
-      }
-
-      .header > .logo 
-      {
-        max-width: 200px;
-        padding: 15px;
-      }
-
-      .header > .textinfo 
-      {
-        padding: 15px;
-        font-size: 15px;
-      }
-
-      .header > .textinfo > span 
-      {
-        font-weight: bolder;
-        color: #FF6400;
-      }
-
-      .header > .btnorder 
-      {
-        padding: 15px;
-        text-align: center;
-      }
-
-      button.default
-      {
-        display: inline-block;
-        white-space: nowrap;
-        margin: 1em 0;
-        max-height: 75px;
-        font-size: 20px;
-        text-decoration: underline;
-        font-weight: bolder;
-        border-radius: 0px 0px 0px 0px;
-        background-color: #FF6400;
-      }
-
-      .header > .contacts 
-      {
-        white-space: nowrap;
-        padding: 15px;
-        text-align: center;
-        font-size: 20px;
-        font-weight: bolder;
-      }
-
-      .header > .contacts img 
-      {
-        margin: 5px;
-      }
-
-      .header > .contacts > .email 
-      {
-        text-decoration: underline;
-        font-weight: normal;
-      }
-
-      .blockOne 
-      {
-        position: relative;
-        background: url('/materials/fonbanner.png');
-        height: 443px;
-      }
-
-      .blockOne .whiteheader 
-      {
-        white-space: nowrap;
-        display: inline-block;
-        padding: 10px;
-        margin: 40px 0px 0px 0px;
-        background-color: white;
-        font-size: 40px;
-        font-weight: bolder;
-        color: #555E6D;
-        position: relative;
-        z-index: 1;
-      }
-
-      .blockOne .blueheader 
-      {
-        white-space: nowrap;
-        display: inline-block;
-        padding: 10px;
-        margin: 0px;
-        background-color: #555E6D;
-        font-size: 40px;
-        color: white;
-        font-weight: bolder;
-        position: relative;
-        z-index: 1;
-      }
-
-      .blockOne .imgfield img
-      {
-        max-width: 100%;
-        margin: 70px 0px 0px 0px;
-        position: relative;
-        z-index: 0;
-      }
-
-      .blockOne .textfield 
-      {
-        padding: 30px 40px;
-      }
-
-      .blockOne .textfield img 
-      {
-        margin-right: 13px;
-        float: left;
-      }
-
-      .blockOne .textfield span.orange 
-      {
-        color: #FF6400; 
-        font-weight: bolder;
-      }
-
-      .blockTwo 
-      {
-        text-align: center;
-      }
-
-      .blockTwo h1 
-      {
-        padding: 35px;
-        margin: 0;
-      }
-
-      .blockTwo span.orange 
-      {
-        color: #FF6400;
-      }
-
-      .blockTwo .field 
-      {
-        margin: 20px 0px 20px 0px;
-      }
-
-      .blockTwo .field h6 
-      {
-        text-align: left;
-      }
-
-      .blockTwo .field .textfield 
-      {
-        text-align: left;
-      }
-
-      .blockTwo .field > img 
-      {
-        margin: 15px;
-        padding: 10px;
-        float: left;
-      }
-
-      .blockThree 
-      {
-        background: #E0E0E0;
-        text-align: center;
-      }
-
-      .blockThree h1 
-      {
-        padding: 30px;
-      }
-
-      .blockThree span.orange 
-      {
-        color: #FF6400;
-      }
-
-      .blockThree .field 
-      {
-        background: white;
-        padding: 30px;
-        border: 10px solid #E0E0E0;
-      }
-
-      .blockFour h1 
-      {
-        text-align: center;
-        padding: 30px;
-      }
-
-      .blockFour span.orange 
-      {
-        color: #FF6400;
-      }
-
-      .blockFour .fieldwrapper 
-      {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        border: 4px solid white;
-      }
-
-      .blockFour .fieldwrapper > div 
-      {
-        border: 1px solid #E0E0E0;
-      }
-
-      .blockFour button.default 
-      {
-        margin: 0;
-        width: 100%;
-      }
-
-      .blockFour div.default
-      {
-        display: inline-block;
-        white-space: nowrap;
-        max-height: 75px;
-        font-size: 20px;
-        text-decoration: underline;
-        font-weight: bolder;
-        border-radius: 0px 0px 0px 0px;
-        background-color: #FF6400;
-        margin: 0;
-        width: 100%;
-      }
-
-      .blockFour .textfield
-      {
-        font-size: 14px;
-      }
-
-      .blockFive 
-      {
-        text-align: center;
-        background: url('/materials/fon-forma.png');
-      }
-
-      .blockFive h1 
-      {
-        padding: 20px;
-      }
-
-      .blockFive span.orange 
-      {
-        color: #FF6400;
-      }
-
-      .blockFive .imgfield > img 
-      {
-        max-width: 100%;
-      }
-
-      .blockSix h1 
-      {
-        padding: 100px 20px 20px 0px;
-      }
-
-      .blockSix .contactsfield 
-      {
-        position: relative;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        z-index: 1;
-      }
-
-      .blockSix .mapfield
-      {
-        padding: 0;
-        margin: 0;
-      }
-
-      @media screen and (max-width: 768px) 
-      {
-        .header > .btnorder 
-        {
-          text-align: left;
-        }
-
-        .header > .contacts 
-        {
-          text-align: left;
-        }
-
-        .blockOne .whiteheader 
-        {
-          white-space: normal;
-        }
-
-        .blockOne .imgfield 
-        {
-          display: none;
-        }
-
-        .blockTwo .field > img 
-        {
-          float: none;
-        }
-
-        .blockTwo .field h6
-        {
-          text-align: center;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
   </head>
+
   <body>
     <div class="container-fluid">
 
       <div class="row header">
-        <div class="col-md-3 logo">
-          <img src="materials/logoshapka.png">
+        <div class="col-lg-3 col-md-12 logo">
+          <img src="images/logoshapka.png">
         </div>
-        <div class="col-md-3 textinfo">
+        <div class="col-lg-3 textinfo">
           ООО "ПНЕВМОТЕХ" - <span>официальный поставщик</span> винтовых компрессоров ЗИФ. Доставка. Запчасти. Сервис
         </div>
-        <div class="col-md-3 btnorder">
+        <div class="col-lg-3 btnorder">
           <button class="btn btn-danger default">БЫСТРЫЙ ЗАКАЗ</button>
         </div>
-        <div class="col-md-3 contacts">
-          <p class="phone"><img src="materials/ikonkatelefona.png">+7(495)123-45-67</p>
-          <p class="email"><img src="materials/ikonkapochty.png">zakaz@zif-msk.ru</p>
+        <div class="col-lg-3 contacts">
+          <p class="phone"><img src="images/ikonkatelefona.png">+7(495)123-45-67</p>
+          <p class="email"><img src="images/ikonkapochty.png">zakaz@zif-msk.ru</p>
         </div>
       </div>
 
@@ -335,7 +33,7 @@
           <div class="whiteheader">ВИНТОВЫЕ КОМПРЕССОРЫ ЗИФ</div>
           <div class="blueheader">ПО ЗАВОДСКИМ ЦЕНАМ</div>
           <div class="textfield">
-              <img src="materials/budilnik2.png">
+              <img src="images/budilnik2.png">
               <span>Получи выгодное для себя</span>
               <br> 
               <span class="orange">решение за 15 минут</span>
@@ -345,20 +43,20 @@
           </div>
         </div>
         <div class="col-md-6 imgfield">
-          <img src="materials/kompressorybanner.png">
+          <img src="images/kompressorybanner.png">
         </div>
       </div>
 
       <div class="row blockTwo">
         <div class="container">
           <div class="row"> 
-            <div class="col-md-12">
+            <div class="col-lg-12">
                 <h1><span class="orange">ВАШИ ВЫГОДЫ</span><span> ОТ РАБОТЫ С НАМИ</span></h1>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6 field">
-              <img src="materials/budilnik.png">
+              <img src="images/budilnik.png">
               <h6>Ответим через 15 минут</h6>
               <div class="textfield">
                 Отправьте нам запрос и получите ответ в течение 15 минут. Лучшее для вас 
@@ -367,7 +65,7 @@
               </div>
             </div>
             <div class="col-lg-6 field">
-              <img src="materials/dostavka.png">
+              <img src="images/dostavka.png">
               <h6>Доставка в любой регион России</h6>
               <div class="textfield">
                 Выполняем доставку компрессоров и запасных частей в любую точку России.
@@ -376,9 +74,10 @@
               </div>
             </div>
           </div>
+
           <div class="row">
             <div class="col-lg-6 field">
-              <img src="materials/kopilkavigody.png">
+              <img src="images/kopilkavigody.png">
               <h6>Экономия на рассрочке и скидках</h6>
               <div class="textfield">
                 Мы работаем напрямую с заводом, поэтому ваша цена будет без торговых наценок. 
@@ -386,7 +85,7 @@
               </div>
             </div>
             <div class="col-lg-6 field">
-              <img src="materials/sertificatvigody.png">
+              <img src="images/sertificatvigody.png">
               <h6>Гарантия сертифицированного дилера</h6>
               <div class="textfield">
                 Наша компания имеет сертификат официального дилера, поэтому 
@@ -401,40 +100,40 @@
       <div class="row blockThree">
         <div class="container">
           <div class="row"> 
-            <div class="col-md-12">
+            <div class="col-lg-12">
                 <h1><span class="orange">ПОЧЕМУ</span> КОМПРЕССОРЫ ЗИФ - <span class="orange"> ЛУЧШИЕ?</span></h1>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-12 field">
-              <img src="materials/assortiment.jpg">
+              <img src="images/assortiment.jpg">
               <h2>АССОРТИМЕНТ</h2>
               <p>Самый широкий и подоробный ассортимент дизельных станций из всех предложений на рынке - более 50 моделей.</p>
             </div>
             <div class="col-lg-4 col-12 field">
-              <img src="materials/dlya-morozov.jpg">
+              <img src="images/dlya-morozov.jpg">
               <h2>ДЛЯ "МОРОЗОВ"</h2>
               <p>Проверенные модели компрессоров для эксплуатации на улице и в цеху, а также при любых осадках и при минусовых температурах</p>
             </div>
             <div class="col-lg-4 col-12 field">
-              <img src="materials/vzrivozashita.jpg">
+              <img src="images/vzrivozashita.jpg">
               <h2>ВЗРЫВОЗАЩИТА</h2>
               <p>Надежные взрывозащитные модели для эксплуатации в подземных выработках шахт, взрывоопасных по газу, пыли и т.п.</p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-12 field">
-              <img src="materials/proekty.jpg">
+              <img src="images/proekty.jpg">
               <h2>ПРОЕКТИРОВАНИЕ</h2>
               <p>Разработка компрессорных станций ведется группой опытных конструкторов с использованием мощного программного комплекса</p>
             </div>
             <div class="col-lg-4 col-12 field">
-              <img src="materials/proizvodstvo.jpg">
+              <img src="images/proizvodstvo.jpg">
               <h2>ПРОИЗВОДСТВО</h2>
               <p>Производство компрессоров осуществляется на современном оборудовании с числовым программным управлением.</p>
             </div>
             <div class="col-lg-4 col-12 field">
-              <img src="materials/obsluzhivanie.jpg">
+              <img src="images/obsluzhivanie.jpg">
               <h2>ОБСЛУЖИВАНИЕ</h2>
               <p>Оперативная рекация на запросы, по подбору, пуско-наладке и сервисному обслуживанию на всей территории России.</p>
             </div>
@@ -444,7 +143,7 @@
 
       <div class="container blockFour">
         <div class="row"> 
-          <div class="col-md-12">
+          <div class="col-lg-12">
               <h1><span class="orange">ПОДОБРАТЬ </span>КОМПРЕССОР ЗИФ</h1>
           </div>
         </div>
@@ -452,7 +151,7 @@
           <div class="col-lg-3 fieldwrapper">
             <div class="field">
                 <h6>Дизельный (ПВ)</h6>
-                <img src="materials/diselniy.jpg">
+                <img src="images/diselniy.jpg">
                 <div class="textfield">
                     Дизельные компрессоры стационарные и на шасси.
                 </div>
@@ -462,7 +161,7 @@
           <div class="col-lg-3 fieldwrapper">
             <div class="field">
                 <h6>Электрический (СВЭ)</h6>
-                <img src="materials/elektricheskiy.jpg">
+                <img src="images/elektricheskiy.jpg">
                 <div class="textfield">
                   Электрические компрессоры для улицы и помещений
                 </div>
@@ -472,7 +171,7 @@
           <div class="col-lg-3 fieldwrapper">
             <div class="field"> 
               <h6>Шахтный (ШВ)</h6>
-              <img src="materials/shakhtniy.jpg">
+              <img src="images/shakhtniy.jpg">
               <div class="textfield">
                 Взрывозащитные компрессоры для шахт, рудников, карьеров
               </div>
@@ -482,7 +181,7 @@
           <div class="col-lg-3 fieldwrapper">
             <div class="field">
               <h6>Рудничный (СВЭ РН)</h6>
-              <img src="materials/rudnichniy.jpg">
+              <img src="images/rudnichniy.jpg">
               <div class="textfield">
                 Электрический компрессор для эксплуатации на улице
               </div>
@@ -491,9 +190,11 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="container-fluid blockFive">
+
         <div class="row"> 
           <div class="col-lg-12">
               <h1>НУЖНА <span class="orange">ПОМОЩЬ</span> В ПОДБОРЕ?</h1>
@@ -502,7 +203,7 @@
 
         <div class="row">
           <div class="col-lg-6 imgfield">
-            <img src="materials/kompressoryforma.png">
+            <img src="images/kompressoryforma.png">
           </div>
           <div class="col-lg-6">
             <h3>Получите ответ <span class="orange">через 15 минут</span></h3>
@@ -525,40 +226,52 @@
               </form>
           </div>
         </div>
+
     </div>
 
     <div class="container-fluid blockSix">
+
       <div class="row">
-        <div class="col-sm-3 contactsfield">
+        <div class="col-lg-3 col-sm-12 contactsfield">
           <h1>КОНТАКТЫ</h1>
           <div>
-            <p><img src="materials/ikonkatelefona.png">+7(495)123-45-67</p>
-            <p><img src="materials/ikonkapochty.png">zakaz@zif-msk.ru</p>
-            <p><img src="materials/ikonkapochty.png">г. Москва, м. Фрунзенская, ул. Россолимо д.17, стр. 1</p>
+            <div class="container contacts"><img src="images/ikonkatelefona.png">+7(495)123-45-67</div>
+            <div class="container"><img src="images/ikonkapochty.png">zakaz@zif-msk.ru</div>
+            <div class="container">
+              <img src="images/ikonkapochty.png">
+              <span>г. Москва, м. Фрунзенская, ул. Россолимо д.17, стр. 1</span>
+            </div>
           </div>
         </div>
 
-        <div class="col-sm-9 mapfield">
+        <div class="col-lg-9 col-sm-12 mapfield">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A02f34e7ec53a76237c8b2a47a3c94c6236634c7f9926b80024a15e3c5633d599&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
         </div>
       </div>
-    
-      <div class="row">
-        <div class="col-sm-3">
-          <img src="materials/logopodval.png" alt="">
-        </div>
-        <div class="col-sm-3">
-          <p>ООО "ПНЕВМОТЕХ" - официальный поставщик винтовых компрессоров ЗИФ. Доставка. Запчасти</p>
-        </div>
-        <div class="col-sm-3">
-          
-        </div>
-        <div class="col-sm-3">
-  
+   </div>
+   <div class="container-fluid blockSeven">
+    <div class="row">
+      <div class="col-lg-2 logofield">
+        <img src="images/logopodval.png" alt="logopodval">
+      </div>
+      <div class="col-lg-3 textfield">
+        ООО "ПНЕВМОТЕХ" - <span>официальный поставщик</span>
+        винтовых компрессоров ЗИФ. Доставка. Запчасти. Сервис.
+      </div>
+      <div class="col-lg-3 buttonfield">
+        <button class="btn btn-danger default">БЫСТРЫЙ ЗАКАЗ</button>
+      </div>
+      <div class="col-lg-4 contactsfield">
+          <img src="images/telefon-podval.png">
+          +7 (495) 123 - 45 - 67 <br>
+          <img src="images/telefon-podval.png">
+          zakaz@zif-msk.ru
         </div>
       </div>
+    </div>
    </div>
   </body>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
