@@ -3,26 +3,69 @@
   border-bottom: 3px solid #555E6D;
 }
 
-.header > .logo 
+div.default:hover
+{
+  cursor: pointer;
+}
+
+.staticForm label.error, .modalForm label.error
+{
+  position: absolute;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border: 2px solid rgb(105, 10, 10);
+  border-radius: 5px 5px 5px 5px;
+  background: #D52B1E;
+  padding: 3px;
+  font-weight: bolder;
+  color: white;
+  opacity: 0.9;
+}
+
+
+.staticForm #phone-error
+{
+  top: 97px;
+  right: 18px;
+}
+
+.staticForm #email-error
+{
+  top: 151px;
+  right: 18px;
+}
+
+
+.modalForm #phone-error
+{
+  top: 72px;
+  right: 18px;
+}
+
+.modalForm #email-error
+{
+  top: 126px;
+  right: 18px;
+}
+
+.header .logo 
 {
   text-align: center;
-  max-width: 200px;
   padding: 15px;
 }
 
-.header > .textinfo 
+.header .textinfo 
 {
   padding: 15px;
   font-size: 15px;
 }
 
-.header > .textinfo > span 
+.header .textinfo span 
 {
   font-weight: bolder;
   color: #FF6400;
 }
 
-.header > .btnorder 
+.header .btnorder 
 {
   padding: 15px;
   text-align: center;
@@ -32,7 +75,7 @@ button.default
 {
   display: inline-block;
   white-space: nowrap;
-  margin: 1em 0;
+  margin: 1em;
   max-height: 75px;
   font-size: 20px;
   text-decoration: underline;
@@ -41,21 +84,20 @@ button.default
   background-color: #FF6400;
 }
 
-.header > .contacts 
+.header .contacts 
 {
   white-space: nowrap;
   padding: 15px;
-  text-align: center;
   font-size: 20px;
   font-weight: bolder;
 }
 
-.header > .contacts img 
+.header .contacts img 
 {
   margin: 5px;
 }
 
-.header > .contacts > .email 
+.header .contacts > .email 
 {
   text-decoration: underline;
   font-weight: normal;
@@ -123,12 +165,12 @@ button.default
 
 .blockTwo 
 {
+  padding-top: 60px;
   text-align: center;
 }
 
 .blockTwo h1 
 {
-  padding: 35px;
   margin: 0;
 }
 
@@ -180,6 +222,11 @@ button.default
   background: white;
   padding: 30px;
   border: 10px solid #E0E0E0;
+}
+
+.blockThreeA 
+{
+  text-align: center;
 }
 
 .blockFour h1 
@@ -317,14 +364,26 @@ button.default
     font-size: 20px;
 }
 
+.modal-header
+{
+  background: #FF6400;
+  color: white;
+  font-weight: bolder;
+}
+
+.modal-title
+{
+  font-size: 25px;
+}
+
+.modal-body 
+{
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) 
 {
-  .header > .btnorder 
-  {
-    text-align: left;
-  }
-
-  .header > .contacts 
+  .header .contacts 
   {
     text-align: left;
   }
@@ -354,6 +413,21 @@ button.default
     display: none;
   }
 
+  .blockOne .textfield
+  {
+    display: none;
+  }
+
+  .blockOne .buttonfield
+  {
+    text-align: center;
+  }
+
+  .blockTwo .field 
+  {
+    margin: 0;
+  }
+
   .blockTwo .field > img 
   {
     float: none;
@@ -364,8 +438,30 @@ button.default
     text-align: center;
   }
 
+  .blockSix .contactsfield
+  {
+    padding: 20px
+  }
+
   .blockSix h1
   {
+      padding: 20px;
       text-align: center;
+  }
+
+  .blockSeven .textfield
+  {
+    padding: 20px;
+    text-align: center;
+  }
+
+   .blockSeven .contactsfield
+   {
+     padding: 20px;
+   }
+
+  button.default, div.default
+  {
+    font-size: 110%;
   }
 }
