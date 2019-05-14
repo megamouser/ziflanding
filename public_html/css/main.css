@@ -8,6 +8,11 @@ div.default:hover
   cursor: pointer;
 }
 
+.form-group
+{
+  position: relative;
+}
+
 .staticForm label.error, .modalForm label.error
 {
   position: absolute;
@@ -22,29 +27,16 @@ div.default:hover
 }
 
 
-.staticForm #phone-error
+#phone-error
 {
-  top: 97px;
-  right: 18px;
+  top: 3px;
+  right: 3px;
 }
 
-.staticForm #email-error
+#email-error
 {
-  top: 151px;
-  right: 18px;
-}
-
-
-.modalForm #phone-error
-{
-  top: 72px;
-  right: 18px;
-}
-
-.modalForm #email-error
-{
-  top: 126px;
-  right: 18px;
+  top: 3px;
+  right: 3px;
 }
 
 .header .logo 
