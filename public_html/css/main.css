@@ -1,6 +1,9 @@
 .header 
 {
   border-bottom: 3px solid #555E6D;
+  position: fixed;
+  z-index: 2;
+  background: white;
 }
 
 div.default:hover
@@ -42,12 +45,12 @@ div.default:hover
 .header .logo 
 {
   text-align: center;
-  padding: 15px;
+  padding-top: 15px;
 }
 
 .header .textinfo 
 {
-  padding: 15px;
+  padding-top: 15px;
   font-size: 15px;
 }
 
@@ -59,7 +62,7 @@ div.default:hover
 
 .header .btnorder 
 {
-  padding: 15px;
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -79,7 +82,7 @@ button.default
 .header .contacts 
 {
   white-space: nowrap;
-  padding: 15px;
+  padding-top: 15px;
   font-size: 20px;
   font-weight: bolder;
 }
@@ -97,9 +100,10 @@ button.default
 
 .blockOne 
 {
+  padding-top: 140px;
   position: relative;
   background: url('/images/fonbanner.png');
-  height: 443px;
+  height: 100%;
 }
 
 .blockOne .whiteheader 
