@@ -1,0 +1,15 @@
+{
+    "name": "megamouser/ziflanding",
+    "authors": [
+        {
+            "name": "Artem",
+            "email": "artemon-yrev@yandex.ru"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/"
+        }
+    }
+}
