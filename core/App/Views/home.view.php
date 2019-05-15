@@ -38,7 +38,7 @@
           <button class="btn btn-danger default modalOpen">БЫСТРЫЙ ЗАКАЗ</button>
         </div>
         <div class="col-lg-3 contacts">
-          <p class="phone"><img src="images/ikonkatelefona.png">+7(495)123-45-67</p>
+          <p class="phone"><img src="images/ikonkatelefona.png"><span class="zphone">+7(495)123-45-67</span></p>
           <p class="email"><img src="images/ikonkapochty.png">zakaz@zif-msk.ru</p>
         </div>
       </div>
@@ -251,7 +251,7 @@
         <div class="col-lg-3 col-sm-12 contactsfield">
           <h1>КОНТАКТЫ</h1>
           <div>
-            <div class="container contacts"><img src="images/ikonkatelefona.png">+7(495)123-45-67</div>
+            <div class="container contacts"><img src="images/ikonkatelefona.png"><span class="zphone">+7(495)123-45-67</span></div>
             <div class="container"><img src="images/ikonkapochty.png">zakaz@zif-msk.ru</div>
             <div class="container">
               <img src="images/ikonkapochty.png">
@@ -280,7 +280,7 @@
       </div>
       <div class="col-lg-4 contactsfield">
           <img src="images/telefon-podval.png">
-          +7 (495) 123 - 45 - 67 <br>
+          <span class="zphone">+7 (495) 123 - 45 - 67</span><br>
           <img src="images/telefon-podval.png">
           zakaz@zif-msk.ru
         </div>
