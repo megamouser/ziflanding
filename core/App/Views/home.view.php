@@ -2,11 +2,27 @@
 <html>
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zif Landing</title>
+    <title>Компрессоры ЗИФ завод Арсенал (АрсМаш)</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script>(function(w, c){(w[c]=w[c]||[]).push(function(){new zTracker({"id":"c7e455521ea01361fa917fa7211dd70f1663","metrics":{"metrika":"53660347"}});});})(window, "zTrackerCallbacks");</script>
+    <script async id="zd_ct_phone_script" src="https://my.zadarma.com/js/ct_phone.min.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(53660347, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/53660347" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
 
   <body>
@@ -209,7 +225,7 @@
           </div>
           <div class="col-lg-6">
             <h3>Получите ответ <span class="orange">через 15 минут</span></h3>
-              <form class="staticForm" method="POST", action="email">
+              <form id="staticForm" class="staticForm" method="POST", action="email">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" placeholder="Ваше имя">
                 </div>
@@ -281,7 +297,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form class="modalForm" method="POST" action="email">
+            <form id="modalForm" class="modalForm" method="POST" action="email">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" placeholder="Ваше имя">
               </div>
@@ -364,6 +380,8 @@
         }
       },
       submitHandler: (form) => {
+        let formId = $(form).attr("id");
+        yaCounter53660347.reachGoal(formId);
         $.ajax({
             type: "POST",
             url: "email",
@@ -381,6 +399,5 @@
     
     $('.staticForm').validate(validationParams);
     $('.modalForm').validate(validationParams);
-
   </script>
 </html> 

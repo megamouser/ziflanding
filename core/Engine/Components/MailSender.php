@@ -26,16 +26,17 @@ class MailSender
 
   public function sendEmail()
   {
-    $headers = 'From: zif@kompr.ru' . "\r\n" .
-               'Reply-To: zif@kompr.ru' . "\r\n" .
+    $data = json_decode($this->jsonData, true);
+    $headers = 'From: zakaz@zif-msk.ru' . "\r\n" .
+               'Reply-To: zakaz@zif-msk.ru' . "\r\n" .
                'Content-type: text/html; charset=utf-8' . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
 
-    $clientEmail = $this->jsonData["email"];
-    $ownMessage = "<p><b>Заявка с zif@kompr.ru</b></p>" . $this->emailTemplate;
-    $clientMessage = "<p>Здравствуйте, вы оформили заявку на zif@kompr.ru следующего содержания: </p>" . $this->emailTemplate;
-
-    mail($clientEmail, "Вы оставили заявку на сайте zif@kompr.ru", $clientMessage, $headers);
-    mail("artemon-yrev@yandex.ru", "zif@kompr.ru", $ownMessage, $headers);
+    $clientEmail = $data["email"];
+    $ownMessage = "<div><b>Заявка с zakaz@zif-msk.ru</b></div>" . $this->emailTemplate;
+    $clientMessage = "<div>Здравствуйте, вы оформили заявку на zakaz@zif-msk.ru следующего содержания: </div>" . $this->emailTemplate;
+    
+    mail($clientEmail, "Вы оставили заявку на сайте zakaz@zif-msk.ru", $clientMessage, $headers);
+    mail("euronasos19@gmail.com", "zakaz@zif-msk.ru", $ownMessage, $headers);
   }
 }

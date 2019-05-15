@@ -27,5 +27,5 @@ class Helper
     public static function arrToJson(array $arr)
     {
         return json_encode($arr, JSON_UNESCAPED_UNICODE);
-    }  
+    }
 }
