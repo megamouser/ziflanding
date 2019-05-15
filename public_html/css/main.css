@@ -6,6 +6,12 @@
   background: white;
 }
 
+.mobileHeader
+{
+  display: none;
+  border: 1px solid black;
+}
+
 div.default:hover
 {
   cursor: pointer;
@@ -379,9 +385,18 @@ button.default
 
 @media screen and (max-width: 768px) 
 {
+  .mobileHeader
+  {
+    display: block;
+    position: fixed;
+    background: white;
+    z-index: 3;
+  }
+
   .header
   {
     position: static;
+    display: none;
   }
 
   .header .contacts 

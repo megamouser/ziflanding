@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,6 +25,17 @@
   </head>
 
   <body>
+    <div class="container-fluid mobileHeader">
+      <div class="row">
+        <div style="padding: 1em; text-align: center;" class="col-4 logo">
+          <img src="images/logoshapka.png" alt="mobile logo">
+        </div>
+        <div style="padding: 0.5em; font-size: 150%; text-align: right;" class="col-8 contacts">
+          <p><b>zif@kompr.ru<b></p>
+          <p><b>+7(499)380-87-92<b></p>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid header">
       <div class="row">
         <div class="col-lg-3 col-md-12 logo">
@@ -38,8 +48,8 @@
           <button class="btn btn-danger default modalOpen">БЫСТРЫЙ ЗАКАЗ</button>
         </div>
         <div class="col-lg-3 contacts">
-          <p class="phone"><img src="images/ikonkatelefona.png"><span class="zphone">+7(495)123-45-67</span></p>
-          <p class="email"><img src="images/ikonkapochty.png">zakaz@zif-msk.ru</p>
+          <p class="phone"><img src="images/ikonkatelefona.png"><span class="zphone">+7(499)380-87-92</span></p>
+          <p class="email"><img src="images/ikonkapochty.png">zif@kompr.ru</p>
         </div>
       </div>
     </div>
@@ -251,8 +261,8 @@
         <div class="col-lg-3 col-sm-12 contactsfield">
           <h1>КОНТАКТЫ</h1>
           <div>
-            <div class="container contacts"><img src="images/ikonkatelefona.png"><span class="zphone">+7(495)123-45-67</span></div>
-            <div class="container"><img src="images/ikonkapochty.png">zakaz@zif-msk.ru</div>
+            <div class="container contacts"><img src="images/ikonkatelefona.png"><span class="zphone">+7(499)380-87-92</span></div>
+            <div class="container"><img src="images/ikonkapochty.png">zif@kompr.ru</div>
             <div class="container">
               <img src="images/ikonkapochty.png">
               <span>г. Москва, м. Фрунзенская, ул. Россолимо д.17, стр. 1</span>
@@ -280,9 +290,9 @@
       </div>
       <div class="col-lg-4 contactsfield">
           <img src="images/telefon-podval.png">
-          <span class="zphone">+7 (495) 123 - 45 - 67</span><br>
+          <span class="zphone">+7(499)380-87-92</span><br>
           <img src="images/telefon-podval.png">
-          zakaz@zif-msk.ru
+          zif@kompr.ru
         </div>
       </div>
     </div>

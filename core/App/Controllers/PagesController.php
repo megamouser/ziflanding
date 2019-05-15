@@ -21,7 +21,6 @@ class PagesController
     {
         if($_POST)
         {
-            //print_r($_POST);
             $_POST['date'] = date('m.d.y H:i:s');
             $jsonData = Helper::arrToJson($_POST);
             
