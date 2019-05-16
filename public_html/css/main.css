@@ -9,7 +9,6 @@
 .mobileHeader
 {
   display: none;
-  border: 1px solid black;
 }
 
 div.default:hover
@@ -51,12 +50,14 @@ div.default:hover
 .header .logo 
 {
   text-align: center;
-  padding-top: 15px;
+  padding: 15px 0px 0px 15px;
 }
 
 .header .textinfo 
 {
-  padding-top: 15px;
+  color: #555E6D;
+  font-weight: normal;
+  padding: 15px 0px 0px 0px;
   font-size: 15px;
 }
 
@@ -69,14 +70,15 @@ div.default:hover
 .header .btnorder 
 {
   padding-top: 15px;
-  text-align: center;
+  text-align: right;
 }
 
 button.default
 {
+  padding: 10px 30px;
   display: inline-block;
   white-space: nowrap;
-  margin: 1em;
+  margin: 14px 0px 14px 0px;
   max-height: 75px;
   font-size: 20px;
   text-decoration: underline;
@@ -87,10 +89,16 @@ button.default
 
 .header .contacts 
 {
+  color: #5E6374;
   white-space: nowrap;
   padding-top: 15px;
   font-size: 20px;
   font-weight: bolder;
+}
+
+.header .contacts .phone
+{
+  font-size: 25px;
 }
 
 .header .contacts img 
@@ -117,7 +125,7 @@ button.default
   white-space: nowrap;
   display: inline-block;
   padding: 10px;
-  margin: 40px 0px 0px 0px;
+  margin: 40px 0px 0px 40px;
   background-color: white;
   font-size: 40px;
   font-weight: bolder;
@@ -131,7 +139,7 @@ button.default
   white-space: nowrap;
   display: inline-block;
   padding: 10px;
-  margin: 0px;
+  margin: 0px 0px 0px 40px;
   background-color: #555E6D;
   font-size: 40px;
   color: white;
@@ -150,12 +158,14 @@ button.default
 
 .blockOne .textfield 
 {
-  padding: 30px 40px;
+  color: #5E6374;
+  font-weight: normal;
+  margin: 30px 10px 30px 40px
 }
 
 .blockOne .textfield img 
 {
-  margin-right: 13px;
+  margin: 5px;
   float: left;
 }
 
@@ -165,14 +175,21 @@ button.default
   font-weight: bolder;
 }
 
+.blockOne .buttonfield
+{
+  margin: 10px 10px 10px 40px;
+}
+
 .blockTwo 
 {
+  color: #555E6D;
   padding-top: 60px;
   text-align: center;
 }
 
 .blockTwo h1 
 {
+  color: #555E6D;
   margin: 0;
 }
 
@@ -188,11 +205,13 @@ button.default
 
 .blockTwo .field h6 
 {
+  font-size: 20px;
   text-align: left;
 }
 
 .blockTwo .field .textfield 
 {
+  font-weight: normal;
   text-align: left;
 }
 
@@ -205,12 +224,14 @@ button.default
 
 .blockThree 
 {
+  padding: 10px;
   background: #E0E0E0;
   text-align: center;
 }
 
 .blockThree h1 
 {
+  color: #555E6D;
   padding: 30px;
 }
 
@@ -221,14 +242,17 @@ button.default
 
 .blockThree .field 
 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: normal;
   background: white;
-  padding: 30px;
   border: 10px solid #E0E0E0;
+  color: #5E6374;
 }
 
-.blockThreeA 
+.blockFour 
 {
-  text-align: center;
+  color: #555E6D;
 }
 
 .blockFour h1 
@@ -250,10 +274,29 @@ button.default
   border: 4px solid white;
 }
 
-.blockFour .fieldwrapper > div 
+
+.blockFour .fieldwrapper .field
 {
   border: 1px solid #E0E0E0;
 }
+
+.blockFour .fieldwrapper .field h6
+{
+  font-weight: bolder;
+  padding: 15px;
+}
+
+.blockFour .fieldwrapper .field .textfield
+{
+  font-weight: normal;
+  padding: 5px;
+}
+
+.bloockFour .fieldwrapper .field h2
+{
+  border: 1px solid black;
+}
+
 
 .blockFour button.default 
 {
@@ -282,6 +325,7 @@ button.default
 
 .blockFive 
 {
+  color: #555E6D;
   text-align: center;
   background: url('/images/fon-forma.png');
 }
@@ -301,35 +345,42 @@ button.default
   max-width: 100%;
 }
 
-.blockSix h1 
-{
-  padding: 100px 20px 20px 0px;
-}
-
 .blockSix .contactsfield 
 {
+  font-weight: normal;
   color: #5E6374;
   position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   z-index: 1;
 }
 
-.blockSix .mapfield
+.blockSix .contactsfield h1
 {
-  padding: 0;
-  margin: 0;
-}
-
-.blockSix .contacts 
-{
-    white-space: nowrap;
-    font-size: 23px;
-    font-weight: bolder;
+  font-weight: bolder;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .blockSix img 
 {
-    margin: 10px;
+  padding: 5px;
+}
+
+.blockSix .contactsfield .phone
+{
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.blockSix .contactsfield > div
+{
+  padding: 10px;
+}
+
+.blockSix .mapfield
+{
+  padding: 0;
+  margin: 0;
 }
 
 .blockSeven 
@@ -356,7 +407,8 @@ button.default
 
 .blockSeven .buttonfield
 {
-    text-align: center;
+
+  text-align: center;
 }
 
 .blockSeven .contactsfield
@@ -383,14 +435,30 @@ button.default
   text-align: center;
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 991px) 
 {
   .mobileHeader
   {
+    padding: 0.3em; 
+    text-align: center;
     display: block;
     position: fixed;
     background: white;
     z-index: 3;
+    border-bottom: 4px solid #555E6D;
+  }
+
+
+  .mobileHeader .contacts
+  {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .mobileHeader .contacts .default
+  {
+    margin: 0;
+    font-size: 70%;
   }
 
   .header
@@ -406,12 +474,12 @@ button.default
 
   .blockOne .blueheader 
   {
-      white-space: normal;
+    white-space: normal;
   }
 
   .blockOne h1 
   {
-      margin: 2em;
+    margin: 2em;
   }
 
   .blockOne .imgfield img
@@ -422,6 +490,17 @@ button.default
   .blockOne .whiteheader 
   {
     white-space: normal;
+    margin: 0;
+  }
+
+  .blockOne .blueheader
+  {
+    margin: 0;
+  }
+
+  .blockOne .buttonfield
+  {
+    margin: 0;
   }
 
   .blockOne .imgfield 
@@ -457,12 +536,6 @@ button.default
   .blockSix .contactsfield
   {
     padding: 20px
-  }
-
-  .blockSix h1
-  {
-      padding: 20px;
-      text-align: center;
   }
 
   .blockSeven .textfield

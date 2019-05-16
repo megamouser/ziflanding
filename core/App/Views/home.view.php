@@ -6,6 +6,7 @@
     <title>Компрессоры ЗИФ завод Арсенал (АрсМаш)</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+
     <script>(function(w, c){(w[c]=w[c]||[]).push(function(){new zTracker({"id":"c7e455521ea01361fa917fa7211dd70f1663","metrics":{"metrika":"53660347"}});});})(window, "zTrackerCallbacks");</script>
     <script async id="zd_ct_phone_script" src="https://my.zadarma.com/js/ct_phone.min.js"></script>
     <!-- Yandex.Metrika counter -->
@@ -27,28 +28,33 @@
   <body>
     <div class="container-fluid mobileHeader">
       <div class="row">
-        <div style="padding: 1em; text-align: center;" class="col-4 logo">
-          <img src="images/logoshapka.png" alt="mobile logo">
+        <div class="col-4 logo">
+          <img src="images/logoshapka.jpg" alt="mobile logo">
         </div>
-        <div style="padding: 0.5em; font-size: 150%; text-align: right;" class="col-8 contacts">
-          <p><b>zif@kompr.ru<b></p>
-          <p><b>+7(499)380-87-92<b></p>
+        <div class="col-8 contacts">
+            <div>
+              <b>+7(499)380-87-92<b>
+            </div>
+            <div>
+              <button class="btn btn-danger default modalOpen">Быстрый заказ</button>
+            </div>
         </div>
       </div>
     </div>
+
     <div class="container-fluid header">
       <div class="row">
-        <div class="col-lg-3 col-md-12 logo">
-          <img src="images/logoshapka.png">
+        <div class="col-lg-2 logo">
+          <img src="images/logoshapka.jpg">
         </div>
         <div class="col-lg-3 textinfo">
-          ООО "ПНЕВМОТЕХ" - <span>официальный поставщик</span> винтовых компрессоров ЗИФ. Доставка. Запчасти. Сервис
+          ООО "ПНЕВМОТЕХ" - <span>официальный поставщик</span> винтовых компрессоров ЗИФ. Доставка. Запчасти. Сервис.
         </div>
         <div class="col-lg-3 btnorder">
           <button class="btn btn-danger default modalOpen">БЫСТРЫЙ ЗАКАЗ</button>
         </div>
-        <div class="col-lg-3 contacts">
-          <p class="phone"><img src="images/ikonkatelefona.png"><span class="zphone">+7(499)380-87-92</span></p>
+        <div class="col-lg contacts">
+          <p class="phone"><img src="images/ikonkatelefona.png"><span class="zphone">+7 (499) 380 - 87 - 92</span></p>
           <p class="email"><img src="images/ikonkapochty.png">zif@kompr.ru</p>
         </div>
       </div>
@@ -133,41 +139,40 @@
             <h1><span class="orange">ПОЧЕМУ</span> КОМПРЕССОРЫ ЗИФ - <span class="orange"> ЛУЧШИЕ?</span></h1>
         </div>
       </div>
-    </div>
-
-    <div class="container blockThreeA">
-      <div class="row">
-        <div class="col-lg-4 col-12 field">
-          <img src="images/assortiment.jpg">
-          <h2>АССОРТИМЕНТ</h2>
-          <p>Самый широкий и подоробный ассортимент дизельных станций из всех предложений на рынке - более 50 моделей.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12 field">
+            <img src="images/assortiment.jpg">
+            <h2>АССОРТИМЕНТ</h2>
+            <p>Самый широкий и подоробный ассортимент дизельных станций из всех предложений на рынке - более 50 моделей.</p>
+          </div>
+          <div class="col-lg-4 col-12 field">
+            <img src="images/dlya-morozov.jpg">
+            <h2>ДЛЯ "МОРОЗОВ"</h2>
+            <p>Проверенные модели компрессоров для эксплуатации на улице и в цеху, а также при любых осадках и при минусовых температурах</p>
+          </div>
+          <div class="col-lg-4 col-12 field">
+            <img src="images/vzrivozashita.jpg">
+            <h2>ВЗРЫВОЗАЩИТА</h2>
+            <p>Надежные взрывозащитные модели для эксплуатации в подземных выработках шахт, взрывоопасных по газу, пыли и т.п.</p>
+          </div>
         </div>
-        <div class="col-lg-4 col-12 field">
-          <img src="images/dlya-morozov.jpg">
-          <h2>ДЛЯ "МОРОЗОВ"</h2>
-          <p>Проверенные модели компрессоров для эксплуатации на улице и в цеху, а также при любых осадках и при минусовых температурах</p>
-        </div>
-        <div class="col-lg-4 col-12 field">
-          <img src="images/vzrivozashita.jpg">
-          <h2>ВЗРЫВОЗАЩИТА</h2>
-          <p>Надежные взрывозащитные модели для эксплуатации в подземных выработках шахт, взрывоопасных по газу, пыли и т.п.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-12 field">
-          <img src="images/proekty.jpg">
-          <h2>ПРОЕКТИРОВАНИЕ</h2>
-          <p>Разработка компрессорных станций ведется группой опытных конструкторов с использованием мощного программного комплекса</p>
-        </div>
-        <div class="col-lg-4 col-12 field">
-          <img src="images/proizvodstvo.jpg">
-          <h2>ПРОИЗВОДСТВО</h2>
-          <p>Производство компрессоров осуществляется на современном оборудовании с числовым программным управлением.</p>
-        </div>
-        <div class="col-lg-4 col-12 field">
-          <img src="images/obsluzhivanie.jpg">
-          <h2>ОБСЛУЖИВАНИЕ</h2>
-          <p>Оперативная рекация на запросы, по подбору, пуско-наладке и сервисному обслуживанию на всей территории России.</p>
+        <div class="row">
+          <div class="col-lg-4 col-12 field">
+            <img src="images/proekty.jpg">
+            <h2>ПРОЕКТИРОВАНИЕ</h2>
+            <p>Разработка компрессорных станций ведется группой опытных конструкторов с использованием мощного программного комплекса</p>
+          </div>
+          <div class="col-lg-4 col-12 field">
+            <img src="images/proizvodstvo.jpg">
+            <h2>ПРОИЗВОДСТВО</h2>
+            <p>Производство компрессоров осуществляется на современном оборудовании с числовым программным управлением.</p>
+          </div>
+          <div class="col-lg-4 col-12 field">
+            <img src="images/obsluzhivanie.jpg">
+            <h2>ОБСЛУЖИВАНИЕ</h2>
+            <p>Оперативная рекация на запросы, по подбору, пуско-наладке и сервисному обслуживанию на всей территории России.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -260,14 +265,12 @@
       <div class="row">
         <div class="col-lg-3 col-sm-12 contactsfield">
           <h1>КОНТАКТЫ</h1>
-          <div>
-            <div class="container contacts"><img src="images/ikonkatelefona.png"><span class="zphone">+7(499)380-87-92</span></div>
-            <div class="container"><img src="images/ikonkapochty.png">zif@kompr.ru</div>
-            <div class="container">
+            <div class="phone"><img src="images/ikonkatelefona.png"><span class="zphone">+7 (499) 380 - 87 - 92</span></div>
+            <div><img src="images/ikonkapochty.png">zif@kompr.ru</div>
+            <div>
               <img src="images/ikonkapochty.png">
               <span>г. Москва, м. Фрунзенская, ул. Россолимо д.17, стр. 1</span>
             </div>
-          </div>
         </div>
 
         <div class="col-lg-9 col-sm-12 mapfield">
