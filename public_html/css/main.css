@@ -231,6 +231,7 @@ button.default
 
 .blockThree h1 
 {
+  font-size: 30px;
   color: #555E6D;
   padding: 30px;
 }
@@ -242,6 +243,7 @@ button.default
 
 .blockThree .field 
 {
+
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: normal;
@@ -385,7 +387,6 @@ button.default
 
 .blockSeven 
 {
-    border: 1px solid black;
     background: #555E6D;
     padding: 20px;
 }
@@ -533,9 +534,24 @@ button.default
     text-align: center;
   }
 
+  .blockThree .field h2
+  { 
+    font-size: 30px;
+  }
+
+  .blockFour h1
+  {
+    font-size: 30px;
+  }
+
   .blockSix .contactsfield
   {
     padding: 20px
+  }
+
+  .blockSix .contactsfield .phone
+  {
+    font-size: 25px;
   }
 
   .blockSeven .textfield
@@ -551,6 +567,6 @@ button.default
 
   button.default, div.default
   {
-    font-size: 110%;
+    font-size: 100%;
   }
 }
